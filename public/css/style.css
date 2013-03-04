@@ -1146,8 +1146,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     display: block;
 }
 .team-member img {
-  height: 260px;
-  width: 260px;
+  height: 210px;
+  width: 210px;
 }
 .info-box {
     text-align: center;
