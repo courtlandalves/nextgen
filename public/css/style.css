@@ -901,20 +901,32 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
       
 /* Clients */
+
 .clients .well {
     padding: 0;
-    -webkit-border-radius: 0;
+/*    -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -o-border-radius: 0; */
     border-radius: 0;
 }
+
 .clients .well img:hover {
     opacity: 0.5;
 }
 
-.clients .well {
-  background-color: white;
+.clients .span2 {
+  /*background-color: white;*/
+  border: 0px;
+  text-align: center;
+}
+
+.clients img {
+  max-height: 50px;
+  -webkit-filter: grayscale(100%);
+  opacity: 0.5;
+  text-align: center;
+
 }
 
 /* Slider */
@@ -1146,8 +1158,8 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     display: block;
 }
 .team-member img {
-  height: 210px;
-  width: 210px;
+  height: 100%;
+  width: 100%;
 }
 .info-box {
     text-align: center;
