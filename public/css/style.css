@@ -929,6 +929,11 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 
 }
 
+.clients img:hover {
+  -webkit-filter: none;
+  opacity: 1.0;
+}
+
 /* Slider */
 .slider .well {
     padding: 4px;
