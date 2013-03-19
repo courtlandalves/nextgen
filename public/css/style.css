@@ -933,6 +933,40 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   -webkit-filter: none;
   opacity: 1.0;
 }
+      
+/* Sponsors */
+
+.sponsors .well {
+    padding: 0;
+/*    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0; */
+    border-radius: 0;
+}
+
+.sponsors .well img:hover {
+    opacity: 0.5;
+}
+
+.sponsors .span2 {
+  /*background-color: white;*/
+  border: 0px;
+  text-align: center;
+}
+
+.sponsors img {
+  max-height: 65px;
+  -webkit-filter: grayscale(100%);
+  opacity: 0.5;
+  text-align: center;
+
+}
+
+.sponsors img:hover {
+  -webkit-filter: none;
+  opacity: 1.0;
+}
 
 /* Slider */
 .slider .well {
