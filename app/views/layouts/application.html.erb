@@ -1,14 +1,218 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Nextgen</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <title>NextGen Partners</title>		
+    <% stylesheet_link_tag    "application", :media => "all" %>
+    <% javascript_include_tag "application" %>
+    <% csrf_meta_tags %>
+    <!-- Basic Needs -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonts -->
+    <link href = 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,800' rel = 'stylesheet' type = 'text/css'>
+    
+    <!-- CSS Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="ico/favicon.png">
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Start header -->
+    <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="brand-wrapper">
+            <a class="brand" href="/"><img src="images/logo1.jpg" /></a>
+          </div>
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/firms">FIRMS</a></li>
+            <li><a href="/sponsors">SPONSORS</a></li>
+            <li><a href="/contact">Join</a></li>
+          </ul>
+        </div>
+      </div>                
+    </div>            
+    </header>
+    <!-- End header --> 
 
-<%= yield %>
+    <%= yield %>
 
-</body>
+    <!-- Start footer -->
+    <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="span12 recent-post">
+          <h5>Recent Events</h5>
+          <ul>
+            <li class="span3">
+            <div class="span1">
+              <a href="images/events/venture_wednesday.jpg" rel="prettyPhoto">
+                <img src="images/events/venture_wednesday.jpg" alt=""></a>
+            </div>
+            <div class="recent-body">
+              <b>NextGen Venture Wednesday</b><br>
+              <em><small>May, 2013</small></em>
+            </div>
+            </li>
+
+
+            <li class="span3">
+            <div class="span1">
+              <a href="images/events/board_meeting.jpg" rel="prettyPhoto">
+                <img src="images/events/board_meeting.jpg" alt=""></a>
+            </div>
+            <div class="recent-body">
+              <b>NextGen Board Meeting</b><br>
+              <em><small>February, 2013</small></em>
+            </div>
+            </li>
+            <li class="span3">
+            <div class="span1">
+              <a href="images/events/group_photo.jpg" rel="prettyPhoto">
+                <img src="images/events/group_photo.jpg" alt="" /></a>
+            </div>
+            <div class="recent-body">
+              <b>NextGen Board Dinner</b><br>
+              <em><small>January, 2013</small></em>
+            </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Start socket -->
+    <section class="socket">
+    <div class="container">
+      <div class="row">
+        <div class="span6">
+          <span>© 2013 NextGen Partners All rights reserved.</span>     
+        </div>
+        <div class="span6">
+          <!--
+          <ul class="social-links">
+            <li>Stay Connected</li>
+            <li><a href="#"><i class="icon-facebook"></i></a></li>
+            <li><a href="#"><i class="icon-twitter"></i></a></li>
+            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+            <li><a href="#"><i class="icon-google-plus"></i></a></li>
+          </ul>   
+          -->
+        </div>
+      </div>     
+    </div>
+    </section>
+    <!-- End socket -->
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.onecarousel.min.js"></script>
+    <script src="js/jquery.tweet.js"></script>
+    <script src="js/jflickrfeed.min.js"></script> 
+    <script src="js/jquery.prettyPhoto.js"></script> 
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $('#myCarousel').oneCarousel({
+            easeIn: 'rotateIn',
+            interval: 5000,
+            pause: 'hover'
+            });
+          jQuery(function ($) {
+            $(".tweet").tweet({
+              join_text: "auto",
+              username: "wrapbootstrap",
+              avatar_size: 100,
+              count: 2,
+              auto_join_text_default: " we said, ",
+              auto_join_text_ed: " we ",
+              auto_join_text_ing: " we were ",
+              auto_join_text_reply: " we replied ",
+              auto_join_text_url: " we were checking out ",
+              loading_text: "loading tweets..."
+              });
+            });
+          $('.flickr').jflickrfeed({
+            limit: 6,
+            qstrings: {
+            id: '44802888@N04'
+            },
+itemTemplate:
+'<li class="span1">' +
+'<a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a>' +
+'</li>'
+});
+var $menu_select = $("<select />");
+$("<option />", { "selected": "selected", "value": "", "text": "Site Navigation" }).appendTo($menu_select);
+$menu_select.appendTo(".header .navbar-inner");
+
+$(".header .navbar-inner ul li a").each(function () {
+    var menu_url = $(this).attr("href");
+    var menu_text = $(this).text();
+    if ($(this).parents("li").length == 2) { menu_text = '- ' + menu_text; }
+    if ($(this).parents("li").length == 3) { menu_text = "-- " + menu_text; }
+    if ($(this).parents("li").length > 3) { menu_text = "--- " + menu_text; }
+    $("<option />", { "value": menu_url, "text": menu_text }).appendTo($menu_select)
+    });
+
+field_id = ".header .navbar-inner select";
+$(field_id).change(function () {
+    value = $(this).attr('value');
+    window.location = value;
+    //go
+    });
+// cache container
+var $container = $('.portfolio .thumbnails');
+var $filter = $('.portfolio-filter');
+// initialize isotope
+$container.isotope({
+    // options...
+    filter: '*'
+    });
+// filter items when filter link is clicked
+$('#filters a').click(function () {
+    var selector = $(this).attr('data-filter');
+    $container.isotope({ filter: selector });
+    return false;
+    });
+// update columnWidth on window resize
+$(window).smartresize(function () {
+    $container.isotope('reLayout');
+    });
+// Filter items when filter link is clicked
+$filter.find('a').click(function () {
+    var selector = $(this).attr('data-filter');
+    $filter.find('a').removeClass('selected');
+    $(this).addClass('selected');
+    });
+$("a[rel^='prettyPhoto']").prettyPhoto();
+});
+</script>
+    </body>
+  </html>
+
 </html>
+
