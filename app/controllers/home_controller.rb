@@ -4,6 +4,8 @@ class HomeController < ApplicationController
   end
 
   def about
+    @team_chairs = BoardMember.where(position: 'chair').order('name ASC')
+    @team_members = BoardMember.where(position: 'team').order('name ASC')
   end
 
   def faq
