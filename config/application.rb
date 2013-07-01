@@ -64,6 +64,6 @@ module Nextgen
     config.assets.initialize_on_precompile = false
 
     # Precompile additional assets. Defaults to [application.js, application.css, non-JS/CSS]
-    config.assets.precompile += ['active_admin.css.scss', 'active_admin.js'] 
+    config.assets.precompile += ['active_admin.css', 'active_admin.css.scss', 'active_admin.js', 'active_admin/print.css'] 
   end
 end
