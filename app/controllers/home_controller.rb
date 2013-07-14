@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
 
   def index
+    @firms = Firm.order('url ASC')
   end
 
   def about
@@ -12,6 +13,7 @@ class HomeController < ApplicationController
   end
 
   def firms
+    @firms = Firm.order('url ASC')
   end
 
   def sponsors

@@ -5,7 +5,49 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
 
+Firm.create(
+  [
+    {url: 'http://www.accel.com/', image_url: 'http://www.crunched.com/wp-content/uploads/2011/01/logo_accel.jpg'},
+    {url: 'http://www.accelkkr.com/', image_url: 'http://www.accelkkr.com/'},
+    {url: 'http://www.adamsstreetpartners.com/', image_url: 'http://www.builtinchicago.org/sites/default/files/company_logos/adams%20street%20partners.png'},
+    {url: 'http://a16z.com/', image_url: 'http://s2.wp.com/wp-content/themes/vip/a16z/img/logo/logo.png?m=1341282133g'},
+    {url: 'http://www.baincapitalventures.com/', image_url: 'http://www.baincapitalventures.com/assets/img/global/logo-bain.png'},
+    {url: 'http://www.battery.com/', image_url: 'http://fortunewallstreet.files.wordpress.com/2011/03/battery_ventures_logo_6.jpg'},
+    {url: 'https://www.bvp.com/', image_url: 'http://noahinsider.com/user_files/2012/10/03/1349290339.png'},
+    {url: 'http://brv.com/', image_url: 'http://brv.com/wp-content/themes/bluerunventures/img/bluerun-ventures-logo.png'},
+    {url: 'http://blumbergcapital.com/', image_url: 'http://blumbergcapital.com/wp-content/uploads/2013/01/logo-300x28.png'},
+    {url: 'http://www.canaan.com/', image_url: 'http://www.canaan.com/downloads/Flag_White_Silv.png'},
+    {url: 'http://www.crosslinkcapital.com/', image_url: 'https://sphotos-a.xx.fbcdn.net/hphotos-ash2/531579_449255941775736_944027375_n.jpg'},
+    {url: 'http://www.dcm.com/', image_url: 'http://www.plugandplaytechcenter.com/sites/default/files/styles/partner-default/public/imgname--dcm_closes_on_500_million_venture_fund---50226711--images--DCM_Logo_RGB__jpg_300dpi_1inch.jpg?itok=23p0P9XS'},
+    {url: 'http://www.dfj.com/', image_url: 'http://www.dfj.com/images/logo.png'},
+    {url: 'http://firstround.com/', image_url: 'http://www.crunched.com/wp-content/uploads/2011/01/FRC.jpg'},
+    {url: 'http://www.foundationcapital.com/', image_url: 'http://upload.wikimedia.org/wikipedia/en/e/e0/Foundation-capital-logo.PNG'},
+    {url: 'http://www.foundersfund.com/', image_url: 'http://news.researchgate.net/uploads/Founders-Fund-logo-507.gif'},
+    {url: 'http://www.greylock.com/', image_url: 'http://images.startupsearch.org/investor/greylock.png'},
+    {url: 'http://www.ggvc.com/', image_url: 'https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-frc1/305047_474391569261963_2131867302_n.jpg'},
+    {url: 'http://www.hcp.com/', image_url: 'http://www.hcp.com/site/images/logo.png'},
+    {url: 'http://www.ivp.com/', image_url: 'http://a0.twimg.com/profile_images/2168829006/ivp-logo-icon.jpg'},
+    {url: 'http://www.intelcapital.com/', image_url: 'https://evbdn.eventbrite.com/s3-s3/eventlogos/4657342/logoblue1.png'},
+    {url: 'http://lsvp.com/', image_url: 'http://lsvp.com/wp-content/themes/lightspeedv2/images/LSVPLoRes.gif'},
+    {url: 'http://www.mainsailpartners.com/', image_url: 'http://www.mainsailpartners.com/Portals/0/logo.gif'},
+    {url: 'http://www.matrixpartners.com/', image_url: 'http://www.aras.com/plm-images/logos/investor-logos/matrix-partners.png'},
+    {url: 'http://www.nea.com/', image_url: 'http://www.nea.com/Images/Logo_NEA.gif'},
+    {url: 'http://www.nvp.com/', image_url: 'http://www.nvp.com/img/nvp_logo.png'},
+    {url: 'http://www.redpoint.com/', image_url: 'http://www.arsenalvp.com/sites/default/files/imagecache/co_investor_logo_square/co-investors/redpoint.gif'},
+    {url: 'http://www.scalevp.com/', image_url: 'http://www.scalevp.com/images/logo_scale_rev.jpg'},
+    {url: 'http://www.shastaventures.com/', image_url: 'http://www.shastaventures.com/img/global/print_logo.jpg'},
+    {url: 'http://www.sierraventures.com/', image_url: 'http://icannwiki.com/images/3/39/SierraVenturesLogo.JPG'},
+    {url: 'http://www.ta.com/', image_url: 'http://www.ta.com/images/global/logo.svg'},
+    {url: 'http://www.tenayacapital.com/', image_url: 'http://www.crunchbase.com/assets/images/resized/0004/9903/49903v1-max-250x250.jpg'},
+    {url: 'http://www.tpggrowth.com/', image_url: 'http://www.marzenmedia.com/images/tpg-growth-logo.gif'},
+    {url: 'http://www.tridentcap.com/', image_url: 'http://images.startupsearch.org/investor/trident-capital.png'},
+    {url: 'http://www.usvp.com/', image_url: 'http://www.firma-ausland.de/insltd/logo_usvp.jpg'},
+    {url: 'http://www.venrock.com/', image_url: 'http://www.venrock.com/wp-content/themes/venrock/images/header-logo.png'}
+])
+
+=begin
 BoardMember.create(
   [
     {
@@ -82,4 +124,5 @@ position: 'chair'
 }
 
 ])
+=end
 

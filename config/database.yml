@@ -13,6 +13,6 @@ development:
   <<: *common
   host: localhost
   database: nextgen_development
-  username: 
+  username: root
 
   

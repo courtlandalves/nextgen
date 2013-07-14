@@ -920,6 +920,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
   /*background-color: white;*/
   border: 0px;
   text-align: center;
+  padding-top: 50px;
 }
 
 .clients img {
