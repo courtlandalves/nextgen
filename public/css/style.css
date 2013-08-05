@@ -951,10 +951,11 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     opacity: 0.5;
 }
 
-.sponsors .span2 {
+.sponsors .span3 {
   /*background-color: white;*/
   border: 0px;
   text-align: center;
+  padding-top: 50px;
 }
 
 .sponsors img {

@@ -18,6 +18,7 @@ class HomeController < ApplicationController
   end
 
   def sponsors
+    @sponsors = Sponsor.order('name ASC')
   end
 
   def contact
