@@ -60,38 +60,20 @@
         <div class="span12 recent-post">
           <h5>Recent Events</h5>
           <ul>
-            <li class="span3">
-            <div class="span1">
-              <a href="images/events/venture_wednesday.jpg" rel="prettyPhoto">
-                <img src="images/events/venture_wednesday.jpg" alt=""></a>
-            </div>
-            <div class="recent-body">
-              <b>NextGen Venture Wednesday</b><br>
-              <em><small>May, 2013</small></em>
-            </div>
-            </li>
+            <% @events.each_with_index do |event, index| %>
 
+              <li class="span3">
+              <div class="span1">
+                <a href="<%= event.image_url.to_s %>" rel="prettyPhoto">
+                  <img src="<%= event.image_url.to_s %>" alt=""></a>
+              </div>
+              <div class="recent-body">
+                <b><%= event.title %></b><br>
+                <em><small><%= event.date.strftime('%B, %Y') %></small></em>
+              </div>
+              </li>
 
-            <li class="span3">
-            <div class="span1">
-              <a href="images/events/board_meeting.jpg" rel="prettyPhoto">
-                <img src="images/events/board_meeting.jpg" alt=""></a>
-            </div>
-            <div class="recent-body">
-              <b>NextGen Board Meeting</b><br>
-              <em><small>February, 2013</small></em>
-            </div>
-            </li>
-            <li class="span3">
-            <div class="span1">
-              <a href="images/events/group_photo.jpg" rel="prettyPhoto">
-                <img src="images/events/group_photo.jpg" alt="" /></a>
-            </div>
-            <div class="recent-body">
-              <b>NextGen Board Dinner</b><br>
-              <em><small>January, 2013</small></em>
-            </div>
-            </li>
+            <% end %>
 
           </ul>
         </div>

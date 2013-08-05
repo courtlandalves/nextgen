@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  before_filter :load_events
 
   def index
     @firms = Firm.order('url ASC')
