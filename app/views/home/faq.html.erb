@@ -1,183 +1,57 @@
-   <!-- Start page header -->             
-    <section class="section-page-header">
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <div class="page-header">
-            <h4>— FREQUENTLY ASKED QUESTIONS —</h4>
-          </div>
-        </div>
+<!-- Start page header -->             
+<section class="section-page-header">
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div class="page-header">
+        <h4>— FREQUENTLY ASKED QUESTIONS —</h4>
       </div>
-      <img src="images/divider_shadow.png" title="" alt="">
     </div>
-    </section> 
-    <!-- End page header -->   
-    <!-- Start faqs -->                                          
-    <section class="faqs">
-    <div class="container">
-      <div class="row">
-        <div class="span4">
-          <h4>General Questions</h4>
-          <hr>
-          <p>
-          Hopefully this page will answer most of your questions regarding NextGen Partners of Silicon Valley.
-          </p>
-        </div>  
-        <div class="span8">
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                  Who is eligible for membership?
-                </a>
-              </div>
-              <div id="collapseOne" class="accordion-body collapse in">
-                <div class="accordion-inner">
-                  <p>
-                  Any individual who works at a Venture Capital or Private Equity fund at the pre-Partner level may join NextGen Partners. This typically includes those with the title of Principal, Vice President, Senior Associate, Associate, and Analyst.  
-                  </p>
-                </div>
-              </div>
-            </div>
+  </div>
+  <img src="images/divider_shadow.png" title="" alt="">
+</div>
+</section> 
+<!-- End page header -->   
+<!-- Start faqs -->                                          
+<section class="faqs">
+<div class="container">
+  <div class="row">
+    <div class="span4">
+      <h4>General Questions</h4>
+      <hr>
+      <p>
+      Hopefully this page will answer most of your questions regarding NextGen Partners of Silicon Valley.
+      </p>
+    </div>  
+    <div class="span8">
+      <div class="accordion" id="accordion1">
 
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                  How much does membership in NextGen cost?
-                </a>
-              </div>
-              <div id="collapseTwo" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>
-                  All NextGen events are sponsored by service providers in Silicon Valley, and membership in NextGen is free to qualified members.  Our sponsors present a mutually beneficial interaction during our events.  These service providers are able to gain access to junior-level investment professionals, and are	 able to make a first impression.  Members benefit from knowing the best service providers in Silicon Valley, and we have seen many lasting relationships begin at NextGen events.
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                  Can anyone come to NextGen events?
-                </a>
-              </div>
-              <div id="collapseThree" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>
-                  You must be a registered NextGen member to attend events and in most cases, RSVPs are required ahead of time.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <% @faqs.each_with_index do |faq, index| %>
 
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                  What types of events does NextGen organize?
-                </a>
-              </div>
-              <div id="collapseFour" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>
-                  NextGen Partners, together with the group's sponsors, organize bi-monthly professional development and social events that are typically located in San Francisco or Silicon Valley. We also have larger quarterly events and educational breakfasts that center around topics that are of interest to our members.  Together with our sponsors, we host between 15 and 20 events per year. If you have idea for future events, please contact us! Lastly, we give back to the community through quarterly community service events.
-                  </p>
-                </div>
-              </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse_<%= index %>">
+                <%= faq.question %>
+              </a>
             </div>
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-                  Are there any opportunities to get more involved with NextGen?
-                </a>
-              </div>
-              <div id="collapseFive" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>
-                  NextGen Partners is run by an executive team of investment professionals that are committed to creating a great organization with a strong membership base.  If you would like to get more involved with the executive team, please <a href="/contact.html" />contact us</a>.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
-                  Why was NextGen created?
-                </a>
-              </div>
-              <div id="collapseSix" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>
-                  NextGen Partners of Silicon Valley was created to facilitate the building of relationships among young venture capitalists.  With the help of our sponsors, NextGen members are able to create relationships with tomorrow's leading venture and private equity professionals.  By investing time today, members are able to forge the relationships and syndicates of tomorrow.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">
-                  How many members does NextGen currently have?
-                </a>
-              </div>
-              <div id="collapseSeven" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>
-                  NextGen Partners is proudly represented by over 500 members from over 200 firms.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseEight">
-                  When is the next NextGen Partners event?
-                </a>
-              </div>
-              <div id="collapseEight" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>
-                  NextGen event notifications are emailed to members, usually two weeks prior to the event.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseNine">
-                  When was NextGen Partners established?
-                </a>
-              </div>
-              <div id="collapseNine" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>
-                  NextGen was created in February of 2001.  The organization began as a group of five VC Associates, and has grown to a professional organization of over 500 members.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTen">
-                  How do I become a member of NextGen?
-                </a>
-              </div>
-              <div id="collapseTen" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <p>
-                  It is easy to become a member, assuming you qualify. Click <a href="/contact.html" >here</a> to learn more.
-                  </p>
-                </div>
+            <div id="collapse_<%= index %>" class="accordion-body collapse <%= index == 0 ? "in" : "" %>">
+              <div class="accordion-inner">
+                <p>
+                <%= faq.answer %>
+                </p>
               </div>
             </div>
           </div>
-        </div>   
-      </div> 
+
+
+        <% end %>
+
+
+      </div>
     </div>
-    </section>     
-    <!-- End faqs -->   
+  </div>
+</div>
+</section>     
+<!-- End faqs -->   
 

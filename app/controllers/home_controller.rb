@@ -11,6 +11,7 @@ class HomeController < ApplicationController
   end
 
   def faq
+    @faqs = Faq.order('position ASC')
   end
 
   def firms
