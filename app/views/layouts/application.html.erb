@@ -57,7 +57,7 @@
               <li class="span3">
               <div class="span1">
                 <a href="<%= event.image_url.to_s %>" rel="prettyPhoto">
-                  <img src="<%= event.image_url.to_s %>" alt=""></a>
+                  <img src="<%= event.image_url(:thumb).to_s %>" alt=""></a>
               </div>
               <div class="recent-body">
                 <b><%= event.title %></b><br>
