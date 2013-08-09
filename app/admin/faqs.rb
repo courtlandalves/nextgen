@@ -15,6 +15,23 @@ ActiveAdmin.register Faq do
     default_actions
   end
 
+  show :title => :question do |question|
+    attributes_table do
+      row :question
+      row :answer
+      row :position
+    end
+  end
+
+  form do |f|
+    f.inputs "FAQ Info" do
+      f.input :question
+      f.input :answer
+      f.input :position, :as => :hidden, :value => Faq.maximum("position")+1 
+    end
+    f.buttons
+  end
+
   collection_action :sort, :method => :post do
     params[:faq].each_with_index do |id, index|
       Faq.update_all(['position=?', index+1], ['id=?', id])
