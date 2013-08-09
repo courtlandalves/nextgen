@@ -18,7 +18,9 @@ ActiveAdmin.register Sponsor do
   show :title => :name do |sponsor|
     attributes_table do
       row :name
-      row :url
+      row :url do
+        link_to(sponsor.url, sponsor.url)
+      end
       row :image do
         image_tag(sponsor.image_url, {:style => "border: 1px solid;"})
       end

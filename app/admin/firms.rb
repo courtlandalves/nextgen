@@ -11,7 +11,9 @@ ActiveAdmin.register Firm do
 
   show :title => :url do |firm|
     attributes_table do
-      row :url
+      row :url do
+        link_to(firm.url, firm.url)
+      end
       row :image do
         image_tag(firm.image_url, {:style => "border: 1px solid;"})
       end
