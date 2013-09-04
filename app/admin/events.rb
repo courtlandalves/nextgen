@@ -30,7 +30,7 @@ ActiveAdmin.register Event do
     f.inputs "Event Info" do
       f.input :title
       f.input :date
-      f.input :image_url, :as => :file
+      f.input :image, :as => :file
     end
     f.buttons
   end
