@@ -11,6 +11,7 @@ ActiveAdmin.register Firm do
 
   show :title => :url do |firm|
     attributes_table do
+      row :name
       row :url do
         link_to(firm.url, firm.url)
       end

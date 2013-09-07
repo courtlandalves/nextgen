@@ -15,7 +15,7 @@ class HomeController < ApplicationController
   end
 
   def firms
-    @firms = Firm.order('url ASC')
+    @firms = Firm.order('name ASC')
   end
 
   def sponsors
