@@ -1,6 +1,7 @@
 ActiveAdmin.register Firm do
   filter :url
-  config.sort_order = "url_asc"
+  filter :name
+  config.sort_order = "name_asc"
   config.paginate = false
 
   index :as => :grid do |firm|
