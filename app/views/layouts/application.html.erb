@@ -54,9 +54,9 @@
           <ul class="row">
             <% @events.each_with_index do |event, index| %>
 
-              <li class="span3">
+              <li class="span3" <% if index >= 4 %>style="display:none"<% end %>>
               <div class="span1">
-                <a href="<%= event.image_url.to_s %>" rel="prettyPhoto">
+                <a href="<%= event.image_url.to_s %>" rel="prettyPhoto[pp_gal]">
                   <img src="<%= event.image_url(:thumb).to_s %>" alt=""></a>
               </div>
               <div class="recent-body">
@@ -180,6 +180,7 @@ $filter.find('a').click(function () {
     $filter.find('a').removeClass('selected');
     $(this).addClass('selected');
     });
+// Pretty Photo
 $("a[rel^='prettyPhoto']").prettyPhoto();
 });
 </script>
