@@ -108,7 +108,7 @@
             interval: 5000,
             pause: 'hover'
             });
-          $('#firmsCarousel').oneCarousel({
+          $('#firmsCarousel').carousel({
             easeIn: 'rotateIn',
             interval: 5000,
             pause: 'hover'
@@ -186,6 +186,11 @@ $("a[rel^='prettyPhoto']").prettyPhoto({
     social_tools: ''
     });
 });
+// Lazy Load Images
+$(document).ready(function() {
+    $("img").unveil();
+    $("img").trigger("unveil");
+    });
 </script>
 
 <script>

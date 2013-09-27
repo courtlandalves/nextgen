@@ -18,3 +18,4 @@
 //= require jquery.onecarousel.min
 //= require jquery.tweet
 //= require jquery.isotope.min
+//= require jquery.unveil
