@@ -56,12 +56,12 @@
 
               <li class="span3" <% if index >= 4 %>style="display:none"<% end %>>
               <div class="span1">
-                <a href="<%= event.image_url.to_s %>" rel="prettyPhoto[pp_gal]">
-                  <img src="<%= event.image_url(:thumb).to_s %>" alt=""></a>
+                <a href="<%= event.image_url.to_s %>" rel="prettyPhoto[events]" title="<%= event.date.strftime('%B %Y') %>">
+                  <img src="<%= event.image_url(:thumb).to_s %>" alt="<%= event.title %>"></a>
               </div>
               <div class="recent-body">
                 <b><%= event.title %></b><br>
-                <em><small><%= event.date.strftime('%B, %Y') %></small></em>
+                <em><small><%= event.date.strftime('%B %Y') %></small></em>
               </div>
               </li>
 
@@ -101,7 +101,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <%= javascript_include_tag "application" %>
-   <script type="text/javascript">
+    <script type="text/javascript">
       $(document).ready(function () {
           $('#mainPhoto').oneCarousel({
             easeIn: 'rotateIn',
@@ -112,7 +112,7 @@
             easeIn: 'rotateIn',
             interval: 5000,
             pause: 'hover'
-          });
+            });
           jQuery(function ($) {
             $(".tweet").tweet({
               join_text: "auto",
@@ -128,10 +128,10 @@
               });
             });
           $('.flickr').jflickrfeed({
-            limit: 6,
-            qstrings: {
-            id: '44802888@N04'
-            },
+              limit: 6,
+              qstrings: {
+              id: '44802888@N04'
+              },
 itemTemplate:
 '<li class="span1">' +
 '<a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a>' +
@@ -181,14 +181,17 @@ $filter.find('a').click(function () {
     $(this).addClass('selected');
     });
 // Pretty Photo
-$("a[rel^='prettyPhoto']").prettyPhoto();
+$("a[rel^='prettyPhoto']").prettyPhoto({
+    callback: function(){location.hash=""},
+    social_tools: ''
+    });
 });
 </script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-42131541-1', 'nextgenpartners.org');
