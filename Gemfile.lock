@@ -145,6 +145,7 @@ GEM
     rake (10.0.3)
     rdoc (3.12.1)
       json (~> 1.4)
+    redcarpet (3.0.0)
     responders (0.9.3)
       railties (~> 3.1)
     rmagick (2.13.2)
@@ -186,6 +187,7 @@ DEPENDENCIES
   newrelic_rpm
   pg
   rails (= 3.2.9)
+  redcarpet
   rmagick
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

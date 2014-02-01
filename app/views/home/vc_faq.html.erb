@@ -1,0 +1,57 @@
+<!-- Start page header -->             
+<section class="section-page-header">
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <div class="page-header">
+        <h4>— How to Get Into VC —</h4>
+      </div>
+    </div>
+  </div>
+  <img src="images/divider_shadow.png" title="" alt="">
+</div>
+</section> 
+<!-- End page header -->   
+<!-- Start faqs -->                                          
+<section class="faqs">
+<div class="container">
+  <div class="row">
+    <div class="span4">
+      <h4>General Questions</h4>
+      <hr>
+      <p>
+      Hopefully this page will answer most of your questions regarding NextGen Partners of Silicon Valley.
+      </p>
+    </div>  
+    <div class="span8">
+      <div class="accordion" id="accordion1">
+
+
+        <% @faqs.each_with_index do |faq, index| %>
+
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse_<%= index %>">
+                <%= faq.question %>
+              </a>
+            </div>
+            <div id="collapse_<%= index %>" class="accordion-body collapse <%= index == 0 ? "in" : "" %>">
+              <div class="accordion-inner">
+                <p>
+               <%= markdown.render(faq.answer).html_safe %>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        <% end %>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</section>     
+<!-- End faqs -->   
+

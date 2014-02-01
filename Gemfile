@@ -38,6 +38,9 @@ gem 'carrierwave'
 gem "fog", "~> 1.3.1"
 gem "rmagick"
 
+# Markdown
+gem 'redcarpet'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
