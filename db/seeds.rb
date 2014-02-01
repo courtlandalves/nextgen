@@ -6,7 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
+#
 
+
+
+=begin 
 Firm.create(
   [
     {url: 'http://www.accel.com/', image_url: 'http://www.crunched.com/wp-content/uploads/2011/01/logo_accel.jpg'},
@@ -47,7 +51,6 @@ Firm.create(
     {url: 'http://www.venrock.com/', image_url: 'http://www.venrock.com/wp-content/themes/venrock/images/header-logo.png'}
 ])
 
-=begin
 BoardMember.create(
   [
     {

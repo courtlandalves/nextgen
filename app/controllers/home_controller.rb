@@ -14,6 +14,10 @@ class HomeController < ApplicationController
     @faqs = Faq.order('position ASC')
   end
 
+  def vc_faq
+    @faqs = VcFaq.order('position ASC')
+  end
+
   def firms
     @firms = Firm.order('name ASC')
   end
