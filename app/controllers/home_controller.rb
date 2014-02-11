@@ -27,6 +27,7 @@ class HomeController < ApplicationController
   end
 
   def contact
+    @faqs = Faq.order('position ASC')
   end
 
 end

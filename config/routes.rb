@@ -10,7 +10,7 @@ Nextgen::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
   match 'about' => 'home#about'
-  match 'faq' => 'home#faq'
+  match 'faq' => 'home#vc_faq'
   match 'vc_faq' => 'home#vc_faq'
   match 'firms' => 'home#firms'
   match 'sponsors' => 'home#sponsors'
