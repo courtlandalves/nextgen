@@ -16,7 +16,7 @@
 <section class="faqs">
 <div class="container">
   <div class="row">
-    <div class="span12">
+    <div class="span10 offset1">
       <div class="accordion" id="accordion1">
 
 
@@ -30,9 +30,13 @@
             </div>
             <div id="collapse_<%= index %>" class="accordion-body collapse <%= index == 0 ? "in" : "" %>">
               <div class="accordion-inner">
-                <p>
-               <%= markdown.render(faq.answer).html_safe %>
-                </p>
+                <div class="row">
+                  <div class="span8">
+                    <p>
+                   <%= markdown.render(faq.answer).html_safe %>
+                    </p>
+                  </div>
+              </div>
               </div>
             </div>
           </div>
