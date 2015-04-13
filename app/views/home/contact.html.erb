@@ -1,75 +1,358 @@
 <!-- Start page header -->             
 <section class="section-page-header">
-<div class="container">
-  <div class="row">
-    <div class="span12">
-      <div class="page-header">
-        <h4>— JOIN —</h4>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="page-header">
+          <h4>— JOIN —</h4>
+        </div>
       </div>
     </div>
+    <img src="images/divider_shadow.png" title="" alt="">
   </div>
-  <img src="images/divider_shadow.png" title="" alt="">
-</div>
 </section> 
 <!-- End page header -->   
 <!-- Start faqs -->                                          
 <section class="faqs">
-<div class="container">
-  <div class="row">
-    <div class="span4">
-      <h4>General Questions</h4>
-      <hr>
-      <p>
-      Hopefully this page will answer most of your questions regarding NextGen Partners of Silicon Valley.
-      </p>
-    </div>  
-    <div class="span8">
-      <div class="accordion" id="accordion1">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <h4>General Questions</h4>
+        <hr>
+        <p>
+        Hopefully this page will answer most of your questions regarding NextGen Partners of Silicon Valley.
+        </p>
+      </div>  
+      <div class="span8">
+        <div class="accordion" id="accordion1">
 
 
-        <% @faqs.each_with_index do |faq, index| %>
+          <% @faqs.each_with_index do |faq, index| %>
 
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse_<%= index %>">
-                <%= faq.question %>
-              </a>
-            </div>
-            <div id="collapse_<%= index %>" class="accordion-body collapse">
-              <div class="accordion-inner">
-                <p>
-                <%= faq.answer %>
-                </p>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse_<%= index %>">
+                  <%= faq.question %>
+                </a>
+              </div>
+              <div id="collapse_<%= index %>" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <p>
+                  <%= faq.answer %>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
 
-        <% end %>
+          <% end %>
 
 
+        </div>
       </div>
     </div>
   </div>
-</div>
 </section>     
 <!-- End faqs -->   
 
 <!-- Start contact -->                                             
 <section class="contact">
-<div class="container">
-  <div class="row">
-    <div class="span12">
-      <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dGMxbHZySVFmV01KbUYxR1JLczZIUGc6MQ" width="600" height="947" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  <div class="container">
+    <div class="span6 offset3">
 
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="//nextgenpartners.us9.list-manage.com/subscribe/post?u=1d15642d2660a74016f58ee60&amp;id=6da94b71bf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <h2>Subscribe to our mailing list</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group">
+              <label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+              </label>
+              <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+              </label>
+              <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+            </div>
+            <div class="mc-field-group input-group">
+              <strong>Please Select One of the Categories Below:  <span class="asterisk">*</span>
+              </strong>
+              <ul><li><input type="radio" value="I currently work in Venture Capital" name="INDUSTRY" id="mce-INDUSTRY-0"><label for="mce-INDUSTRY-0">I currently work in Venture Capital</label></li>
+                <li><input type="radio" value="I am a service provider to the Venture Capital Industry" name="INDUSTRY" id="mce-INDUSTRY-1"><label for="mce-INDUSTRY-1">I am a service provider to the Venture Capital Industry</label></li>
+                <li><input type="radio" value="I am interested in getting into the Venture Capital industry" name="INDUSTRY" id="mce-INDUSTRY-2"><label for="mce-INDUSTRY-2">I am interested in getting into the Venture Capital industry</label></li>
+              </ul>
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-TITLE">Title  <span class="asterisk">*</span>
+              </label>
+              <select name="TITLE" class="required" id="mce-TITLE">
+                <option value=""></option>
+                <option value="Please Select One:">Please Select One:</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Associate">Associate</option>
+                <option value="Senior Associate">Senior Associate</option>
+                <option value="Vice President">Vice President</option>
+                <option value="Principal">Principal</option>
+                <option value="Partner">Partner</option>
+                <option value="Other">Other</option>
+
+              </select>
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-LOCATION">Location  <span class="asterisk">*</span>
+              </label>
+              <select name="LOCATION" class="required" id="mce-LOCATION">
+                <option value=""></option>
+                <option value="Please Select One:">Please Select One:</option>
+                <option value="Austin">Austin</option>
+                <option value="Bay Area">Bay Area</option>
+                <option value="Boston">Boston</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="New York">New York</option>
+                <option value="Non-U.S. Based">Non-U.S. Based</option>
+                <option value="Other">Other</option>
+                <option value="Washington D.C.">Washington D.C.</option>
+
+              </select>
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Work Email Address  <span class="asterisk">*</span>
+              </label>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div class="mc-field-group">
+              <label for="mce-FIRMNAME">Firm Name  <span class="asterisk">*</span>
+              </label>
+              <select name="FIRMNAME" class="required" id="mce-FIRMNAME">
+                <option value=""></option>
+                <option value="Please Select One:">Please Select One:</option>
+                <option value="Not Applicable">Not Applicable</option>
+                <option value="Other">Other</option>
+                <option value="Accel / KKR">Accel / KKR</option>
+                <option value="Accel Partners">Accel Partners</option>
+                <option value="Adams Street Partners">Adams Street Partners</option>
+                <option value="Agility Partners">Agility Partners</option>
+                <option value="Alloy Ventures">Alloy Ventures</option>
+                <option value="American Express Ventures">American Express Ventures</option>
+                <option value="Andresseen Horowitz">Andresseen Horowitz</option>
+                <option value="Asset Management Ventures">Asset Management Ventures</option>
+                <option value="Aster Capital">Aster Capital</option>
+                <option value="AVP Ventures">AVP Ventures</option>
+                <option value="Azure Capital Partners">Azure Capital Partners</option>
+                <option value="Bain Capital Ventures">Bain Capital Ventures</option>
+                <option value="Battery Ventures">Battery Ventures</option>
+                <option value="Bayshore Venture">Bayshore Venture</option>
+                <option value="BBVA Ventures">BBVA Ventures</option>
+                <option value="Bee Partners">Bee Partners</option>
+                <option value="Benchmark Capital">Benchmark Capital</option>
+                <option value="Bessemer Venture Partners">Bessemer Venture Partners</option>
+                <option value="BlueRun Ventures">BlueRun Ventures</option>
+                <option value="Blumberg Capital">Blumberg Capital</option>
+                <option value="Bowery Capital">Bowery Capital</option>
+                <option value="Brightpath Capital">Brightpath Capital</option>
+                <option value="Canaan Partners">Canaan Partners</option>
+                <option value="Carrick Capital Partners">Carrick Capital Partners</option>
+                <option value="Cavacapital">Cavacapital</option>
+                <option value="Charles River Ventures">Charles River Ventures</option>
+                <option value="Chrysalix">Chrysalix</option>
+                <option value="CISCO Ventures">CISCO Ventures</option>
+                <option value="Citi Ventures">Citi Ventures</option>
+                <option value="Claremont Creek Ventures">Claremont Creek Ventures</option>
+                <option value="Clearstone Venture Partners">Clearstone Venture Partners</option>
+                <option value="Comcast Ventures">Comcast Ventures</option>
+                <option value="Commerce Ventures">Commerce Ventures</option>
+                <option value="Correlation Ventures">Correlation Ventures</option>
+                <option value="Crosslink Capital">Crosslink Capital</option>
+                <option value="DCM">DCM</option>
+                <option value="DFJ">DFJ</option>
+                <option value="Draper Associates">Draper Associates</option>
+                <option value="e.Ventures">e.Ventures</option>
+                <option value="eCubed Ventures">eCubed Ventures</option>
+                <option value="Element Six Ventures">Element Six Ventures</option>
+                <option value="Elevation">Elevation</option>
+                <option value="Emergence Capital">Emergence Capital</option>
+                <option value="FF Venture Capital">FF Venture Capital</option>
+                <option value="Firebolt Ventures">Firebolt Ventures</option>
+                <option value="First Round Capital">First Round Capital</option>
+                <option value="FLOODGATE">FLOODGATE</option>
+                <option value="Focus Opportunity">Focus Opportunity</option>
+                <option value="Forerunner Ventures">Forerunner Ventures</option>
+                <option value="Formation 8">Formation 8</option>
+                <option value="Foundation Capital">Foundation Capital</option>
+                <option value="Founders Fund">Founders Fund</option>
+                <option value="FTV Capital">FTV Capital</option>
+                <option value="FundersClub">FundersClub</option>
+                <option value="GE Ventures">GE Ventures</option>
+                <option value="General Atlantic">General Atlantic</option>
+                <option value="General Catalyst Partners">General Catalyst Partners</option>
+                <option value="Georgetown Angels">Georgetown Angels</option>
+                <option value="GGV Capital">GGV Capital</option>
+                <option value="GI Partners">GI Partners</option>
+                <option value="Glynn Capital">Glynn Capital</option>
+                <option value="Google Capital">Google Capital</option>
+                <option value="Google Ventures">Google Ventures</option>
+                <option value="Granite Ventures">Granite Ventures</option>
+                <option value="Greycroft">Greycroft</option>
+                <option value="Greylock">Greylock</option>
+                <option value="GS Growth Equity">GS Growth Equity</option>
+                <option value="GSR Ventures">GSR Ventures</option>
+                <option value="GSV Asset Management">GSV Asset Management</option>
+                <option value="GTG Capital Partners">GTG Capital Partners</option>
+                <option value="Hatteras Funds">Hatteras Funds</option>
+                <option value="Hawthorne Capital">Hawthorne Capital</option>
+                <option value="High Country Venture">High Country Venture</option>
+                <option value="Hercules Technology Growth Capital">Hercules Technology Growth Capital</option>
+                <option value="Highland Capital Partners">Highland Capital Partners</option>
+                <option value="ICONIQ">ICONIQ</option>
+                <option value="IDG Ventures">IDG Ventures</option>
+                <option value="Ignition Partners">Ignition Partners</option>
+                <option value="Illuminate Ventures">Illuminate Ventures</option>
+                <option value="InCube Ventures">InCube Ventures</option>
+                <option value="Industry Ventures">Industry Ventures</option>
+                <option value="Innovation Endeavors">Innovation Endeavors</option>
+                <option value="Intel Capital">Intel Capital</option>
+                <option value="In-Q-Tel">In-Q-Tel</option>
+                <option value="Insight Venture Partners">Insight Venture Partners</option>
+                <option value="Institutional Venture Partners (IVP)">Institutional Venture Partners (IVP)</option>
+                <option value="JMI Equity">JMI Equity</option>
+                <option value="Juniper Ventures">Juniper Ventures</option>
+                <option value="Kapor Capital">Kapor Capital</option>
+                <option value="Khosla Ventures">Khosla Ventures</option>
+                <option value="Kleiner Perkins Caufield Byers">Kleiner Perkins Caufield Byers</option>
+                <option value="Launch Capital">Launch Capital</option>
+                <option value="Learn Capital">Learn Capital</option>
+                <option value="Lightspeed Venture Partners">Lightspeed Venture Partners</option>
+                <option value="Longitude Capital">Longitude Capital</option>
+                <option value="Lumia Capital">Lumia Capital</option>
+                <option value="Matrix Partners">Matrix Partners</option>
+                <option value="Menlo Ventures">Menlo Ventures</option>
+                <option value="Merrick Ventures">Merrick Ventures</option>
+                <option value="Mithril Capital">Mithril Capital</option>
+                <option value="Mohr Davidow Ventures">Mohr Davidow Ventures</option>
+                <option value="Morgenthaler Ventures">Morgenthaler Ventures</option>
+                <option value="New Enterprise Associates">New Enterprise Associates</option>
+                <option value="New Island Capital">New Island Capital</option>
+                <option value="New York Angels">New York Angels</option>
+                <option value="Next World Capital">Next World Capital</option>
+                <option value="Nexus Venture Partners">Nexus Venture Partners</option>
+                <option value="Northleaf Capital Partners">Northleaf Capital Partners</option>
+                <option value="Norwest Venture Partners">Norwest Venture Partners</option>
+                <option value="NXT Capital">NXT Capital</option>
+                <option value="Omidyar Network">Omidyar Network</option>
+                <option value="Openview Partners">Openview Partners</option>
+                <option value="Opus Capital">Opus Capital</option>
+                <option value="Paul Capital">Paul Capital</option>
+                <option value="Pinnacle Ventures">Pinnacle Ventures</option>
+                <option value="Presidio Partners">Presidio Partners</option>
+                <option value="Presidio Ventures">Presidio Ventures</option>
+                <option value="Redpoint Ventures">Redpoint Ventures</option>
+                <option value="Revolution Ventures">Revolution Ventures</option>
+                <option value="Rho Ventures">Rho Ventures</option>
+                <option value="Ribbit Capital">Ribbit Capital</option>
+                <option value="Rothenberg Ventures">Rothenberg Ventures</option>
+                <option value="RRE Ventures">RRE Ventures</option>
+                <option value="Rubicon">Rubicon</option>
+                <option value="Rusnano">Rusnano</option>
+                <option value="Rustic Canyon Partners">Rustic Canyon Partners</option>
+                <option value="S3 VC">S3 VC</option>
+                <option value="SAIC">SAIC</option>
+                <option value="Saints">Saints</option>
+                <option value="Samsung Ventures">Samsung Ventures</option>
+                <option value="Sands Capital">Sands Capital</option>
+                <option value="Sapphire Ventures">Sapphire Ventures</option>
+                <option value="Scale Venture Partners">Scale Venture Partners</option>
+                <option value="Seedchange">Seedchange</option>
+                <option value="Sequoia Capital">Sequoia Capital</option>
+                <option value="Shasta Ventures">Shasta Ventures</option>
+                <option value="Sierra Ventures">Sierra Ventures</option>
+                <option value="Signatures Capital">Signatures Capital</option>
+                <option value="Signia Venture Partners">Signia Venture Partners</option>
+                <option value="Silas Capital">Silas Capital</option>
+                <option value="SingTel Innov8 Ventures">SingTel Innov8 Ventures</option>
+                <option value="SK Telecom Ventures">SK Telecom Ventures</option>
+                <option value="Social+Capital Partnership">Social+Capital Partnership</option>
+                <option value="Split Rock">Split Rock</option>
+                <option value="Storm Ventures">Storm Ventures</option>
+                <option value="SV Angel">SV Angel</option>
+                <option value="SVB Capital">SVB Capital</option>
+                <option value="TA Associates">TA Associates</option>
+                <option value="Technology Crossover Ventures">Technology Crossover Ventures</option>
+                <option value="Telefonica Ventures">Telefonica Ventures</option>
+                <option value="TeleSoft Partners">TeleSoft Partners</option>
+                <option value="Telstra Ventures">Telstra Ventures</option>
+                <option value="Tenaya Capital">Tenaya Capital</option>
+                <option value="Tennenbaum Capital">Tennenbaum Capital</option>
+                <option value="Thomvest Ventures">Thomvest Ventures</option>
+                <option value="TomorrowVentures">TomorrowVentures</option>
+                <option value="Top Tier Capital Partners">Top Tier Capital Partners</option>
+                <option value="TPG">TPG</option>
+                <option value="Trident Capital">Trident Capital</option>
+                <option value="Trinity Ventures">Trinity Ventures</option>
+                <option value="TriplePoint Capital">TriplePoint Capital</option>
+                <option value="True Ventures">True Ventures</option>
+                <option value="U.S. Venture Partners">U.S. Venture Partners</option>
+                <option value="VantagePoint Capital Partners">VantagePoint Capital Partners</option>
+                <option value="Venrock">Venrock</option>
+                <option value="VentureHealth">VentureHealth</option>
+                <option value="Versant Ventures">Versant Ventures</option>
+                <option value="Version One Ventures">Version One Ventures</option>
+                <option value="Vista Equity Partners">Vista Equity Partners</option>
+                <option value="Vulcan Capital">Vulcan Capital</option>
+                <option value="Wasabi Ventures">Wasabi Ventures</option>
+                <option value="Western Technology Investment">Western Technology Investment</option>
+                <option value="WestSummit Capital">WestSummit Capital</option>
+                <option value="XSeed Capital">XSeed Capital</option>
+
+              </select>
+            </div>
+            <div class="mc-field-group input-group">
+              <strong>I would like to be notified about women's events </strong>
+              <ul><li><input type="checkbox" value="65536" name="group[16981][65536]" id="mce-group[16981]-16981-0"><label for="mce-group[16981]-16981-0">Yes</label></li>
+                <li><input type="checkbox" value="131072" name="group[16981][131072]" id="mce-group[16981]-16981-1"><label for="mce-group[16981]-16981-1">No</label></li>
+              </ul>
+            </div>
+            <div class="mc-field-group input-group">
+              <strong>Sectors of Interest </strong>
+              <ul><li><input type="checkbox" value="1" name="group[16969][1]" id="mce-group[16969]-16969-0"><label for="mce-group[16969]-16969-0">Adtech</label></li>
+                <li><input type="checkbox" value="2" name="group[16969][2]" id="mce-group[16969]-16969-1"><label for="mce-group[16969]-16969-1">Big Data</label></li>
+                <li><input type="checkbox" value="4" name="group[16969][4]" id="mce-group[16969]-16969-2"><label for="mce-group[16969]-16969-2">Cloud</label></li>
+                <li><input type="checkbox" value="8" name="group[16969][8]" id="mce-group[16969]-16969-3"><label for="mce-group[16969]-16969-3">Consumer</label></li>
+                <li><input type="checkbox" value="16" name="group[16969][16]" id="mce-group[16969]-16969-4"><label for="mce-group[16969]-16969-4">E-Commerce</label></li>
+                <li><input type="checkbox" value="32" name="group[16969][32]" id="mce-group[16969]-16969-5"><label for="mce-group[16969]-16969-5">Education</label></li>
+                <li><input type="checkbox" value="64" name="group[16969][64]" id="mce-group[16969]-16969-6"><label for="mce-group[16969]-16969-6">Energy</label></li>
+                <li><input type="checkbox" value="128" name="group[16969][128]" id="mce-group[16969]-16969-7"><label for="mce-group[16969]-16969-7">Enterprise</label></li>
+                <li><input type="checkbox" value="256" name="group[16969][256]" id="mce-group[16969]-16969-8"><label for="mce-group[16969]-16969-8">Financial Services</label></li>
+                <li><input type="checkbox" value="512" name="group[16969][512]" id="mce-group[16969]-16969-9"><label for="mce-group[16969]-16969-9">Gaming</label></li>
+                <li><input type="checkbox" value="1024" name="group[16969][1024]" id="mce-group[16969]-16969-10"><label for="mce-group[16969]-16969-10">Healthcare</label></li>
+                <li><input type="checkbox" value="2048" name="group[16969][2048]" id="mce-group[16969]-16969-11"><label for="mce-group[16969]-16969-11">Internet</label></li>
+                <li><input type="checkbox" value="4096" name="group[16969][4096]" id="mce-group[16969]-16969-12"><label for="mce-group[16969]-16969-12">Marketplaces</label></li>
+                <li><input type="checkbox" value="8192" name="group[16969][8192]" id="mce-group[16969]-16969-13"><label for="mce-group[16969]-16969-13">Media</label></li>
+                <li><input type="checkbox" value="16384" name="group[16969][16384]" id="mce-group[16969]-16969-14"><label for="mce-group[16969]-16969-14">Mobile</label></li>
+                <li><input type="checkbox" value="32768" name="group[16969][32768]" id="mce-group[16969]-16969-15"><label for="mce-group[16969]-16969-15">Security</label></li>
+                <li><input type="checkbox" value="262144" name="group[16969][262144]" id="mce-group[16969]-16969-16"><label for="mce-group[16969]-16969-16">Social</label></li>
+                <li><input type="checkbox" value="524288" name="group[16969][524288]" id="mce-group[16969]-16969-17"><label for="mce-group[16969]-16969-17">Software</label></li>
+                <li><input type="checkbox" value="1048576" name="group[16969][1048576]" id="mce-group[16969]-16969-18"><label for="mce-group[16969]-16969-18">Storage</label></li>
+              </ul>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_1d15642d2660a74016f58ee60_6da94b71bf" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-large"></div>
+          </div>
+        </form>
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[8]='INDUSTRY';ftypes[8]='radio';fnames[4]='TITLE';ftypes[4]='dropdown';fnames[5]='LOCATION';ftypes[5]='dropdown';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='FIRMNAME';ftypes[3]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+      <!--End mc_embed_signup-->
     </div>
-    <dt>E-mail:</dt>
-    <dd><a href="mailto:Stephen@tenayacapital.com?subject=NextGen Partners Inquiry">Stephen Fischer</a>.</dd>
 
-  </dl>                     
-</div>
   </div>
-</div>
+  </div>
+  </div>
 </section>     
 <!-- End contact -->   
 

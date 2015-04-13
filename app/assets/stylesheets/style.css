@@ -446,23 +446,43 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 /* Contact */
-.contact-form .btn {
-    margin-top: 30px;
+.contact #mc_embed_signup form{
+  padding-left: 0px;
 }
-.contact .our-office a {
-    color: rgb(50, 50, 50);
+
+.contact input[type="radio"], .contact input[type="checkbox"]{
+  margin-top: 0px;
+  margin-bottom: 4px;
+  line-height: normal;
+  text-transform: none;
 }
-.contact .our-office a:hover {
-    color: #ff6a00;
-    text-decoration: none;
+
+.contact #mc_embed_signup .mc-field-group input {
+  padding-top: 0px;
+  padding-bottom: 2px;
+  width: 99%;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204)
 }
-.contact iframe {
-    width: 100%;
-    margin-bottom: -5px;
+
+.contact label {
+  line-height: inherit;
+  padding-left: 5px;
+  margin-bottom: 0px;
 }
-.contact .img-polaroid {
-    margin-bottom: 30px;
+
+.contact #mc_embed_signup .mc-field-group .asterisk {
+  font-size: 100%;
+  position: static;
 }
+
+.contact #mc-embedded-subscribe {
+  margin: 0px;
+}
+
+
+
+
 
 /* Blog */
 .about-author a, .comment-header a {

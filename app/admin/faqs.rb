@@ -12,7 +12,7 @@ ActiveAdmin.register Faq do
     end
     column :question
     column :answer
-    default_actions
+    actions
   end
 
   show :title => :question do |question|
@@ -29,12 +29,12 @@ ActiveAdmin.register Faq do
       f.input :answer
       f.input :position, :as => :hidden, :value => Faq.maximum("position")+1 
     end
-    f.buttons
+    f.actions
   end
 
   collection_action :sort, :method => :post do
     params[:faq].each_with_index do |id, index|
-      Faq.update_all(['position=?', index+1], ['id=?', id])
+      Faq.where('id=?', id).update_all(['position=?', index+1])
     end
     render :nothing => true
   end

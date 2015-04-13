@@ -12,7 +12,7 @@ ActiveAdmin.register Sponsor do
     end
     column :name
     column :url
-    default_actions
+    actions
   end
 
   show :title => :name do |sponsor|

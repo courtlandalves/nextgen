@@ -1,7 +1,7 @@
 //= require active_admin/base
 
 sendSortRequestOfModel = (model_name) ->
-  formData = $('#' + model_name + ' tbody').sortable('serialize')
+  formData = $('#index_table_' + model_name + ' tbody').sortable('serialize')
   formData += '&' + $('meta[name=csrf-param]').attr('content') + 
     '=' + encodeURIComponent($('meta[name=csrf-token]').attr('content'))
   $.ajax
@@ -13,8 +13,8 @@ sendSortRequestOfModel = (model_name) ->
 
 jQuery ($) ->
   if $('body.admin_faqs.index').length
-    $( '#faqs tbody' ).disableSelection()
-    $( '#faqs tbody' ).sortable
+    $( '#index_table_faqs tbody' ).disableSelection()
+    $( '#index_table_faqs tbody' ).sortable
       axis: 'y'
       cursor: 'move'
       update: (event, ui) ->

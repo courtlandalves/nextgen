@@ -14,7 +14,7 @@ ActiveAdmin.register VcFaq do
     column :answer do |vc_faq|
       markdown.render(vc_faq.answer).html_safe
     end
-    default_actions
+    actions
   end
 
   show :title => :question do |question|
@@ -33,7 +33,7 @@ ActiveAdmin.register VcFaq do
       f.input :answer
       f.input :position, :as => :hidden, :value => VcFaq.maximum("position")+1 
     end
-    f.buttons
+    f.actions
   end
 
   collection_action :sort, :method => :post do

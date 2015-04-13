@@ -11,7 +11,7 @@ ActiveAdmin.register Event do
     column :date do |event|
       event.date.strftime('%B, %Y')
     end
-    default_actions
+    actions
   end
 
   show :title => :title do |event|
@@ -32,7 +32,7 @@ ActiveAdmin.register Event do
       f.input :date
       f.input :image, :as => :file
     end
-    f.buttons
+    f.actions
   end
 
 end

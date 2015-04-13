@@ -12,7 +12,7 @@ ActiveAdmin.register BoardMember do
     column :name
     column :firm
     column :linkedin_url
-    default_actions
+    actions
   end
 
   show :title => :name do |board_member|
@@ -40,7 +40,7 @@ ActiveAdmin.register BoardMember do
       f.input :image_url
       f.input :linkedin_url
     end
-    f.buttons
+    f.actions
   end
 
 
