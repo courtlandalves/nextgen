@@ -1,3 +1,8 @@
 == Nextgen Partners Website
 
 This is designed to be run with Vagrant: https://github.com/rails/rails-dev-box
+
+On Debian you'll need to run these commands as well:
+
+sudo apt-get install libmagickwand-dev
+sudo apt install imagemagick
