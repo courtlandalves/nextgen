@@ -3,6 +3,21 @@
 This is designed to be run with Vagrant: https://github.com/rails/rails-dev-box
 
 On Debian you'll need to run these commands as well:
+    sudo apt-get install libmagickwand-dev
+    sudo apt install imagemagick
 
-sudo apt-get install libmagickwand-dev
-sudo apt install imagemagick
+Then install the app:
+    bundle install
+
+I had to change the pg password as well:
+    sudo su - postgres
+    psql
+    \password vagrant
+
+Pull the database:
+    PGUSER=vagrant
+    PGPASSWORD=vagrant
+    heroku pg:pull HEROKU_POSTGRESQL_TEAL_URL nextgen_development --app nextgen
+
+To run on vagrant, use command: 
+    bin/rails server -b 0.0.0.0
