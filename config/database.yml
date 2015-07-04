@@ -4,8 +4,8 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 common: &common
-  adapter: mysql2
-  encoding: utf8
+  adapter: postgresql
+  encoding: unicode
   reconnect: false
   pool: 30
 
@@ -13,6 +13,6 @@ development:
   <<: *common
   host: localhost
   database: nextgen_development
-  username: root
-
+  username: vagrant
+  password: vagrant
   

@@ -221,7 +221,6 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.11.0)
-    mysql2 (0.3.18)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
@@ -312,7 +311,6 @@ DEPENDENCIES
   devise
   fog
   jquery-rails
-  mysql2
   newrelic_rpm
   pg
   protected_attributes!
@@ -322,3 +320,6 @@ DEPENDENCIES
   redcarpet
   rmagick
   uglifier (>= 1.0.3)
+
+BUNDLED WITH
+   1.10.5

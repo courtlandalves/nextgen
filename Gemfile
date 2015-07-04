@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.1'
+ruby '2.2.2'
 
 gem 'rails', '4.2.0'
 gem 'puma'
@@ -11,7 +11,7 @@ gem 'puma'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'mysql2'
+  gem 'pg'
 end
 
 group :production do
